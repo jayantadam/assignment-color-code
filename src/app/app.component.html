@@ -1,0 +1,18 @@
+<mat-form-field [formGroup]="colorsForm">
+  <input matInput  formControlName="colorName" placeholder="Enter Color name">
+</mat-form-field>
+<div class="example-container mat-elevation-z8">
+  <div class="example-table-container">
+    <mat-table [dataSource]="listGridData">
+      <mat-header-row *matHeaderRowDef="tableColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: tableColumns"></mat-row>
+
+      <ng-container matColumnDef="hex">
+        <mat-header-cell *matHeaderCellDef>Hex</mat-header-cell>
+        <mat-cell [style.background-color]="row?.hex ? row?.hex : '' " *matCellDef="let row; let index = index">
+          {{row?.name}}  -   {{row?.hex}} </mat-cell>
+      </ng-container>
+
+    </mat-table>
+  </div>
+</div>
