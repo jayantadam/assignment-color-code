@@ -1,5 +1,5 @@
 ## ColorCode
-## Running this project this should version dependencies install
+## Running this project this version dependencies should install
 
 Angular CLI: 10.2.3
 Node: 10.24.1
