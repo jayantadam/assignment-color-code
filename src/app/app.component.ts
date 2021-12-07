@@ -17,7 +17,7 @@ export class AppComponent {
 
   constructor(public formBuilder: FormBuilder, private colorService: ColorService) {
     this.colorsForm = this.formBuilder.group({
-      'colorName': [null]
+      'colorName': ['red']
     });
     this.getColorsData();
 
